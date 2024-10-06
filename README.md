@@ -1,9 +1,23 @@
-**This repo is supposed to used as config by NvChad users!**
+个人neovim配置，把这个文件夹替换掉默认的配置文件夹即可
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+On Macos or Linux:
 
-# Credits
+```zsh
+# install neo vim
+brew install neovim
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+# check neovim version
+nvim --version
+
+# install Nvchad
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+```
+
+```zsh
+cd ~/.config
+rm -rf /nvim
+
+git clone https://github.com/blossomi/nvim_config.git
+```
+
+- 进入nvim，等待插件安装完成之后运行 `:MasonInstallAll`  
