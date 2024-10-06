@@ -26,11 +26,26 @@ map("n", "<C-d>", "9j", opt)
 
 map('n', "<leader>j", "A;<ESC>", { desc = '自动在行尾添加分号'})
 
--- ---------------------------------
--- 切换到上一个缓冲区
-map('n', '<C-]>', ':bnext<CR>', opt)
+---------------buffers--------------------
+---------------Harpoon--------------------
+map('n', '<leader>k', "<cmd>:lua require'harpoon.ui'.toggle_quick_menu()<CR>", { desc = "show harpoon menu"})
+map('n', '<leader>la', "<cmd>:lua require'harpoon.mark'.add_file()<CR>", { desc = "add current file to harpoon menu"})
+
+
+map('n', '<leader>ll', "<cmd>:lua require'harpoon.mark'.add_file()<CR>", { desc = "add current file to harpoon menu"})
+
+map('n', 'la', "<cmd>:lua require'harpoon.ui'.nav_file(1)<CR>", { desc = "Navigate to file 1" })
+map('n', 'ls', "<cmd>:lua require'harpoon.ui'.nav_file(2)<CR>", { desc = "Navigate to file 2" })
+map('n', 'ld', "<cmd>:lua require'harpoon.ui'.nav_file(3)<CR>", { desc = "Navigate to file 3" })
+map('n', 'lf', "<cmd>:lua require'harpoon.ui'.nav_file(4)<CR>", { desc = "Navigate to file 4" })
+map('n', 'lg', "<cmd>:lua require'harpoon.ui'.nav_file(5)<CR>", { desc = "Navigate to file 5" })
+map('n', 'lh', "<cmd>:lua require'harpoon.ui'.nav_file(6)<CR>", { desc = "Navigate to file 6" })
+
+-----------------------------------------
+-- 切换到上一个缓冲区-
+-- map('n', '<C-]>', ':bnext<CR>', opt)
 -- 切换到下一个缓冲区（如果需要）
-map('n', '<C-[>', ':bprevious<CR>', opt)
+-- map('n', '<C-[>', ':bprevious<CR>', opt)
 -- ---------------------------------
 
 -- ------------insert模式-------------
