@@ -29,9 +29,6 @@ map('n', "<leader>j", "A;<ESC>", { desc = '自动在行尾添加分号'})
 ---------------buffers--------------------
 ---------------Harpoon--------------------
 map('n', '<leader>k', "<cmd>:lua require'harpoon.ui'.toggle_quick_menu()<CR>", { desc = "show harpoon menu"})
-map('n', '<leader>la', "<cmd>:lua require'harpoon.mark'.add_file()<CR>", { desc = "add current file to harpoon menu"})
-
-
 map('n', '<leader>ll', "<cmd>:lua require'harpoon.mark'.add_file()<CR>", { desc = "add current file to harpoon menu"})
 
 map('n', 'la', "<cmd>:lua require'harpoon.ui'.nav_file(1)<CR>", { desc = "Navigate to file 1" })
